@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "8a11ffc5-2e8b-4712-95ef-1c00e5535f8b",
+		"name": "CarsWebApplication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38903407"
+	},
+	"item": [
+		{
+			"name": "List: /api/Cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7052/api/Cars",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7052",
+					"path": [
+						"api",
+						"Cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Details: /api/Cars/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7052/api/Cars/4ea799db-90b8-429c-a491-7366ff3ef13b",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7052",
+					"path": [
+						"api",
+						"Cars",
+						"4ea799db-90b8-429c-a491-7366ff3ef13b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create: /api/Cars",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"7df35f64-5717-2162-b3fc-2c963556afa6\",\r\n  \"brand\": \"Ford\",\r\n  \"model\": \"Mondeo\",\r\n  \"doorsNumber\": 5,\r\n  \"luggageCapacity\": 400,\r\n  \"engineCapacity\": 1596,\r\n  \"fuelType\": 1,\r\n  \"productionDate\": \"2000-11-03T13:41:59.921Z\",\r\n  \"carFuelConsumption\": 7.8,\r\n  \"bodyType\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7052/api/Cars",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7052",
+					"path": [
+						"api",
+						"Cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit: /api/Cars/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"id\": \"7df35f64-5717-2162-b3fc-2c963556afa6\",\r\n    \"brand\": \"Ford\",\r\n    \"model\": \"Mondeo\",\r\n    \"doorsNumber\": 5,\r\n    \"luggageCapacity\": 400,\r\n    \"engineCapacity\": 1596,\r\n    \"fuelType\": 2,\r\n    \"productionDate\": \"2000-11-03T13:41:59.921\",\r\n    \"carFuelConsumption\": 7.8,\r\n    \"bodyType\": 3\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7052/api/Cars/7df35f64-5717-2162-b3fc-2c963556afa6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7052",
+					"path": [
+						"api",
+						"Cars",
+						"7df35f64-5717-2162-b3fc-2c963556afa6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete: /api/Cars/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7052/api/Cars/7df35f64-5717-2162-b3fc-2c963556afa6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7052",
+					"path": [
+						"api",
+						"Cars",
+						"7df35f64-5717-2162-b3fc-2c963556afa6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
